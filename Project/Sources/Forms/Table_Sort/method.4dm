@@ -20,7 +20,7 @@ Case of
 	: (Form event code:C388=On Load:K2:1)
 		
 		$dataClassName:=Form:C1466.dataClassName
-		Form:C1466.tableTitle:=Replace string:C233(Localized string("TableSort_TableContent"); "{name}"; $dataClassName)
+		Form:C1466.tableTitle:=Replace string:C233(Localized string:C991("TableSort_TableContent"); "{name}"; $dataClassName)
 		
 		//Delete current listBox
 		$numberOfColumns:=LISTBOX Get number of columns:C831(*; "listBoxItems")
@@ -44,7 +44,7 @@ Case of
 				: ($dataClassAttribute.kind="storage")
 					LISTBOX INSERT COLUMN FORMULA:C970(*; "listBoxItems"; $lastColumn; $attributeName; "This."+$attributeName; $defaultFieldType; "Header"+String:C10($lastColumn); $ptr)
 					OBJECT SET TITLE:C194(*; "Header"+String:C10($lastColumn); $attributeName)
-					LISTBOX SET PROPERTY(*; $attributeName; lk truncate mode; lk without ellipsis)
+					LISTBOX SET PROPERTY:C1440(*; $attributeName; lk truncate:K53:37; lk without ellipsis:K53:64)
 					$lastColumn:=$lastColumn+1
 					
 					
@@ -67,7 +67,7 @@ Case of
 							
 							LISTBOX INSERT COLUMN FORMULA:C970(*; "listBoxItems"; $lastColumn; $colName; $colFormula; $defaultFieldType; "Header"+String:C10($lastColumn); $ptr)
 							OBJECT SET TITLE:C194(*; "Header"+String:C10($lastColumn); $colTitle)
-							LISTBOX SET PROPERTY(*; $colName; lk truncate mode; lk without ellipsis)
+							LISTBOX SET PROPERTY:C1440(*; $colName; lk truncate:K53:37; lk without ellipsis:K53:64)
 							$lastColumn:=$lastColumn+1
 						End if 
 					End for each 
