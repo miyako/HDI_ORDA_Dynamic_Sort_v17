@@ -1,0 +1,371 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 720,
+	"windowMaxHeight": 32000,
+	"width": 1000,
+	"height": 720,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 684,
+					"left": 902,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": ":xliff:TableSort_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"listBoxAttributes": {
+					"type": "listbox",
+					"top": 285,
+					"left": 50,
+					"width": 240,
+					"height": 419,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.attributeList",
+					"currentItemSource": "Form:C1466.selectedAttribute",
+					"currentItemPositionSource": "Form:C1466.selectedAttributeIndex",
+					"metaSource": "decorateAttributeList(This:C1470)",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/listBoxAttributes.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.name",
+							"width": 260,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HeaderAttributes",
+								"text": ":xliff:TableSort_HeaderAttributes",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"truncateMode": "none",
+							"class": "sort-attributes"
+						}
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate",
+					"stroke": "automatic"
+				},
+				"listBoxItems": {
+					"type": "listbox",
+					"top": 41,
+					"left": 50,
+					"width": 900,
+					"height": 204,
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.items",
+					"selectionMode": "none",
+					"columns": [
+						{
+							"name": "Colonne2",
+							"width": 396,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Entête1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Colonne3",
+							"width": 789,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Entête2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"resizingMode": "legacy",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate",
+					"stroke": "automatic"
+				},
+				"AddToSort": {
+					"type": "button",
+					"top": 385,
+					"left": 330,
+					"width": 50,
+					"text": ">",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/AddToSort.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default sort-criteria"
+				},
+				"listBoxCriterias": {
+					"type": "listbox",
+					"top": 285,
+					"left": 420,
+					"width": 360,
+					"height": 419,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.criteriaList",
+					"currentItemSource": "Form:C1466.selectedCriteria",
+					"currentItemPositionSource": "Form:C1466.selectedCriteriaIndex",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/listBoxCriterias.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.nameForSort",
+							"width": 260,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "HeaderCriterias",
+								"text": ":xliff:TableSort_HeaderProperties",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"truncateMode": "none",
+							"class": "sort-criteria"
+						},
+						{
+							"name": "Colonne1",
+							"dataSource": "This:C1470.criteriaPict",
+							"dataSourceTypeHint": "picture",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"pictureFormat": "truncatedCenter",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick"
+							],
+							"method": "ObjectMethods/Colonne1.4dm",
+							"header": {
+								"name": "HeaderOrder",
+								"text": ":xliff:TableSort_HeaderOrder",
+								"stroke": "automatic",
+								"textAlign": "center",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate",
+					"stroke": "automatic"
+				},
+				"SortButton": {
+					"type": "button",
+					"top": 385,
+					"left": 890,
+					"width": 100,
+					"text": ":xliff:TableSort_BtnSort",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/SortButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default sort-criteria"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 265,
+					"left": 420,
+					"width": 190,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:TableSort_SortCriteria",
+					"class": "sort-criteria"
+				},
+				"RemoveFromSort": {
+					"type": "button",
+					"top": 415,
+					"left": 330,
+					"width": 50,
+					"text": "<",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/RemoveFromSort.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default sort-criteria"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 265,
+					"left": 50,
+					"width": 220,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:TableSort_SelectAttributes",
+					"class": "sort-attributes"
+				},
+				"CriteriaUp": {
+					"type": "button",
+					"top": 385,
+					"left": 790,
+					"width": 80,
+					"text": ":xliff:TableSort_BtnUp",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/CriteriaUp.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"CriteriaDown": {
+					"type": "button",
+					"top": 415,
+					"left": 790,
+					"width": 80,
+					"text": ":xliff:TableSort_BtnDown",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/CriteriaDown.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"ExitButton": {
+					"type": "button",
+					"top": 415,
+					"left": 890,
+					"width": 100,
+					"action": "cancel",
+					"text": ":xliff:TableSort_BtnExit",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 20,
+					"left": 50,
+					"width": 202,
+					"height": 17,
+					"dataSource": "Form:C1466.tableTitle",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"class": "hdi-link"
+				}
+			}
+		}
+	]
+}

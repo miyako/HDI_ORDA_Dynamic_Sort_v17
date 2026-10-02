@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI_BtnDemo" resname="HDI_BtnDemo">
+				<source>Demo</source>
+				<target>Demo</target>
+			</trans-unit>
+			<trans-unit id="HDI_TxtVersion" resname="HDI_TxtVersion">
+				<source>{version} and above</source>
+				<target>{version} and above</target>
+			</trans-unit>
+			<trans-unit id="HDI_LabelVersion" resname="HDI_LabelVersion">
+				<source>Version:</source>
+				<target>Version:</target>
+			</trans-unit>
+			<trans-unit id="HDI_LabelBlog" resname="HDI_LabelBlog">
+				<source>Blog:</source>
+				<target>Blog:</target>
+			</trans-unit>
+			<trans-unit id="HDI_LabelInfo" resname="HDI_LabelInfo">
+				<source>Info:</source>
+				<target>Info:</target>
+			</trans-unit>
+			<trans-unit id="HDI_TxtTitle" resname="HDI_TxtTitle">
+				<source>• title •</source>
+				<target>• title •</target>
+			</trans-unit>
+			<trans-unit id="HDI_Heading" resname="HDI_Heading">
+				<source>How do I…</source>
+				<target>How do I…</target>
+			</trans-unit>
+			<trans-unit id="HDI_ErrorMainText" resname="HDI_ErrorMainText">
+				<source>Sorry, this "How do I" (HDI) example must&#13;be used with a newer version of 4D&#13;({version} and above)</source>
+				<target>Sorry, this "How do I" (HDI) example must&#13;be used with a newer version of 4D&#13;({version} and above)</target>
+			</trans-unit>
+			<trans-unit id="HDI_ErrorSubText" resname="HDI_ErrorSubText">
+				<source>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
+				<target>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

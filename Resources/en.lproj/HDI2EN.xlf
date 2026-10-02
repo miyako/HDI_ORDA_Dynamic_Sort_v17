@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI2" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI2_TabInfo" resname="HDI2_TabInfo">
+				<source>Info</source>
+				<target>Info</target>
+			</trans-unit>
+			<trans-unit id="HDI2_TabTableSelection" resname="HDI2_TabTableSelection">
+				<source>Table selection</source>
+				<target>Table selection</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Trace" resname="HDI2_Trace">
+				<source>Trace</source>
+				<target>Trace</target>
+			</trans-unit>
+			<trans-unit id="HDI2_SelectTable" resname="HDI2_SelectTable">
+				<source>Select a table to sort</source>
+				<target>Select a table to sort</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderTables" resname="HDI2_HeaderTables">
+				<source>Tables</source>
+				<target>Tables</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

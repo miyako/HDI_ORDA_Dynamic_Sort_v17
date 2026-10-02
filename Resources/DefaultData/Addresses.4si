@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings-import-export table_no="4" format="4D" file_path="iMac-27-Program6:Users:marie-sophie:Perforce:ms.landrieu_mac:depot:4DDatabases:HDIs:v17:HDI_DataStore_CRUD.4dbase:Resources:DefaultData:Addresses.4ie" char_display_format="decimal" platform="automatic" import_mode="replace" table_name="Address">
+	<field table_no="4" field_no="1" kind="int32"/>
+	<field table_no="4" field_no="2" kind="int16"/>
+	<field table_no="4" field_no="3" kind="alpha"/>
+	<field table_no="4" field_no="4" kind="alpha"/>
+	<text_settings with_column_title="false"/>
+	<xml_settings/>
+</settings-import-export>

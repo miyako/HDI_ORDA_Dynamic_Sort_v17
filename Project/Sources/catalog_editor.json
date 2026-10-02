@@ -1,0 +1,136 @@
+{
+	"tables": {
+		"Company": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "508.76953125",
+				"top": "369.75390625",
+				"width": "184.8203125",
+				"height": "163.5625"
+			},
+			"displayable_fields_count": 5
+		},
+		"State": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "826.23046875",
+				"top": "131.53125",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6
+		},
+		"INFO": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "1.078125",
+				"top": "20.56640625",
+				"width": "148.13671875",
+				"height": "236.4296875"
+			},
+			"displayable_fields_count": 9,
+			"fields_ordering": 2,
+			"fields": {
+				"Description": {
+					"position": 4
+				},
+				"TabTitle": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					},
+					"position": 3
+				},
+				"PageNumber": {
+					"position": 2
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		},
+		"School": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "548.5546875",
+				"top": "70.02734375",
+				"width": "189.03515625",
+				"height": "201.98828125"
+			},
+			"displayable_fields_count": 7
+		},
+		"Student": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "197.25",
+				"top": "145.125",
+				"width": "144.671875",
+				"height": "216.3203125"
+			},
+			"displayable_fields_count": 8,
+			"fields": {
+				"firstName": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					}
+				}
+			}
+		}
+	},
+	"relations": {
+		"0AF726BEE3834F4D8AAB1E3F653299EC": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			}
+		},
+		"BE3F628569D94D8582E9F57DB466D33E": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			}
+		},
+		"08810636C7CF47958DEC846F4B6B0AF0": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			}
+		}
+	}
+}

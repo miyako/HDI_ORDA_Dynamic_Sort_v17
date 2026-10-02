@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="ORDA_Dynamic_Sort_v17" uuid="2D4F6103DC084198BFC0283C03D0A0B2" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Student" uuid="394A7DDB2F45476DB3A3A345E4C0FDE5" id="3">
+		<field name="ID" uuid="23C99DFEE6EB41E0B074EDE1AB786122" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="firstName" uuid="AA78333EB62C48458ED65888A4E1AD4C" type="10" limiting_length="255" never_null="true" id="2">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="lastName" uuid="553A855F0A6344B5A0F2E0CCE97F2220" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="schoolID" uuid="D7A71F8AFECF425CAA5B4371F31745DC" type="4" never_null="true" id="4"/>
+		<field name="email" uuid="ADA42E2C733947639B0902EC182DED85" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="suffix" uuid="8F4D8BE66E9C4FE2A5AA4762255B95AA" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="companyId" uuid="C54A6EDF3C5943508FFA20411E7114E2" type="4" never_null="true" id="7"/>
+		<primary_key field_name="ID" field_uuid="23C99DFEE6EB41E0B074EDE1AB786122"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="School" uuid="59D06540097A4FC28DBB491A3E35DF60" id="5">
+		<field name="ID" uuid="8D8749A7BB9948CD9155170043848B2E" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="A2897E5597BD4E94B8DF522E1F5F75A3" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="mixedGender" uuid="06F610FFE4E04F5D8E5F2154F1127611" type="1" never_null="true" id="3"/>
+		<field name="email" uuid="AD13342BA8C8417682917E2DA426FC19" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="creationDate" uuid="58034902369941D5BE8E55F1F04E594D" type="8" never_null="true" id="5"/>
+		<field name="stateID" uuid="58D5C32EFD2548EBA26345B4EF8FF01B" type="4" never_null="true" id="6"/>
+		<primary_key field_name="ID" field_uuid="8D8749A7BB9948CD9155170043848B2E"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="INFO" uuid="12770DBD827248B888F3CD82FC6B270B" id="6">
+		<field name="ID" uuid="9300CBD9A2E149FEA24C1874EB65335C" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="PageNumber" uuid="528FEFD2B1884FF69702715C8FC3E555" type="4" never_null="true" id="2"/>
+		<field name="TabTitle" uuid="02D45CB94C9B4C10BF84792172195903" type="10" limiting_length="255" never_null="true" id="3" hide_in_REST="true">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="Description" uuid="F8AF3AEC3CC946A2A4003337588ADCB5" type="10" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="9300CBD9A2E149FEA24C1874EB65335C"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="State" uuid="D8C252BC7DFD4ECD80698777C6A4C395" id="7">
+		<field name="ID" uuid="3CF309F54E714AA8A67A56421E0ABDBC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="637086F1447D40278F47FB3CB449A914" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="zipCode" uuid="FF83627658D44057B95B24FEBAD51307" type="10" never_null="true" id="3"/>
+		<field name="population" uuid="0ABB62CCF162451ABE8ABA1089E75E09" type="4" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="3CF309F54E714AA8A67A56421E0ABDBC"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="Company" uuid="B7A60A72AD0B43C78613FDF7BF62872E" id="8">
+		<field name="ID" uuid="20265366618C4629BDE1E1EE9FB8092B" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="F748C50A685A49E2BFCC4208C8D330A7" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="numberOfEmployees" uuid="A9DF12931FF44DF9B7461F1EE0291EC4" type="3" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="20265366618C4629BDE1E1EE9FB8092B"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<relation uuid="08810636C7CF47958DEC846F4B6B0AF0" name_Nto1="school" name_1toN="students" state="1">
+		<related_field kind="source">
+			<field_ref uuid="D7A71F8AFECF425CAA5B4371F31745DC" name="schoolID">
+				<table_ref uuid="394A7DDB2F45476DB3A3A345E4C0FDE5" name="Student"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="8D8749A7BB9948CD9155170043848B2E" name="ID">
+				<table_ref uuid="59D06540097A4FC28DBB491A3E35DF60" name="School"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true"/>
+		</relation_extra>
+	</relation>
+	<relation uuid="BE3F628569D94D8582E9F57DB466D33E" name_Nto1="workPlacement" name_1toN="students" state="1">
+		<related_field kind="source">
+			<field_ref uuid="C54A6EDF3C5943508FFA20411E7114E2" name="companyId">
+				<table_ref uuid="394A7DDB2F45476DB3A3A345E4C0FDE5" name="Student"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="20265366618C4629BDE1E1EE9FB8092B" name="ID">
+				<table_ref uuid="B7A60A72AD0B43C78613FDF7BF62872E" name="Company"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true"/>
+		</relation_extra>
+	</relation>
+	<relation uuid="0AF726BEE3834F4D8AAB1E3F653299EC" name_Nto1="state" name_1toN="schools" state="1">
+		<related_field kind="source">
+			<field_ref uuid="58D5C32EFD2548EBA26345B4EF8FF01B" name="stateID">
+				<table_ref uuid="59D06540097A4FC28DBB491A3E35DF60" name="School"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="3CF309F54E714AA8A67A56421E0ABDBC" name="ID">
+				<table_ref uuid="D8C252BC7DFD4ECD80698777C6A4C395" name="State"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true"/>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="0C12C71AA9324526BA478EF84BBC53DC" type="7">
+		<field_ref uuid="8D8749A7BB9948CD9155170043848B2E" name="ID">
+			<table_ref uuid="59D06540097A4FC28DBB491A3E35DF60" name="School"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="36F864D797B24B7B915E522CFA8A5A85" type="7">
+		<field_ref uuid="9300CBD9A2E149FEA24C1874EB65335C" name="ID">
+			<table_ref uuid="12770DBD827248B888F3CD82FC6B270B" name="INFO"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="51D85DD88BE54443A2ACB81C1ACAE9CC" type="7">
+		<field_ref uuid="23C99DFEE6EB41E0B074EDE1AB786122" name="ID">
+			<table_ref uuid="394A7DDB2F45476DB3A3A345E4C0FDE5" name="Student"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="5BE1E6866E0A41D28DFAC9808CFB67BB" type="7">
+		<field_ref uuid="3CF309F54E714AA8A67A56421E0ABDBC" name="ID">
+			<table_ref uuid="D8C252BC7DFD4ECD80698777C6A4C395" name="State"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="83DB83B58A254A3CB4AB1F6BB31A33ED" type="7">
+		<field_ref uuid="20265366618C4629BDE1E1EE9FB8092B" name="ID">
+			<table_ref uuid="B7A60A72AD0B43C78613FDF7BF62872E" name="Company"/>
+		</field_ref>
+	</index>
+	<base_extra package_name="TIP_ORDA_Dynamic_Sort" structure_file_name="HowDoI" data_file_path=":HowDoI.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

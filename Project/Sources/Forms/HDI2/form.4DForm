@@ -1,0 +1,147 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 1000,
+	"height": 500,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 50,
+					"left": 50,
+					"width": 900,
+					"height": 400,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						":xliff:HDI2_TabInfo",
+						":xliff:HDI2_TabTableSelection"
+					],
+					"action": "GotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Field": {
+					"type": "input",
+					"top": 150,
+					"left": 100,
+					"width": 800,
+					"height": 273,
+					"dataSource": "_Descriptions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 421,
+					"left": 861,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"listBoxCriterias1": {
+					"type": "listbox",
+					"top": 130,
+					"left": 350,
+					"width": 300,
+					"height": 300,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.dataClassList",
+					"currentItemSource": "Form:C1466.selectedDataClass",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/listBoxCriterias1.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.name",
+							"width": 285,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HeaderTableName1",
+								"text": ":xliff:HDI2_HeaderTables",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate",
+					"stroke": "automatic"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 110,
+					"left": 350,
+					"width": 190,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_SelectTable",
+					"class": "hdi-link"
+				}
+			}
+		}
+	]
+}
