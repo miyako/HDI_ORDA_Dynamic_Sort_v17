@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings-import-export all_records="true" char_display_format="decimal" encoding="UTF-8" format="4D" platform="automatic" table_no="8" table_name="Company">
+	<text_settings with_column_title="false"/>
+	<field field_no="1" kind="int32" table_no="8"/>
+	<field field_no="3" kind="alpha" table_no="8"/>
+	<field field_no="4" kind="int16" table_no="8"/>      </settings-import-export>

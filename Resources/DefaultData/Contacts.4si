@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings-import-export table_no="3" format="4D" file_path="iMac-27-Program6:Users:marie-sophie:Perforce:ms.landrieu_mac:depot:4DDatabases:HDIs:v17:HDI_DataStore_CRUD.4dbase:Resources:DefaultData:Contacts.4ie" char_display_format="decimal" platform="automatic" import_mode="replace" table_name="Contact">
+	<field table_no="3" field_no="1" kind="int32"/>
+	<field table_no="3" field_no="2" kind="alpha"/>
+	<field table_no="3" field_no="3" kind="alpha"/>
+	<field table_no="3" field_no="5" kind="int32"/>
+	<text_settings with_column_title="false"/>
+	<xml_settings/>
+</settings-import-export>
