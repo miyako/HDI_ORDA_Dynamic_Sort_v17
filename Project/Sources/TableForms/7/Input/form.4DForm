@@ -46,7 +46,7 @@
 					"left": 554,
 					"width": 100,
 					"height": 12,
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"fontFamily": "System Font",
 					"fontSize": 9,
 					"focusable": false,
@@ -73,7 +73,7 @@
 					"width": 515,
 					"height": 17,
 					"sizingX": "grow",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"text": "State"
 				},
 				"Line8": {
@@ -223,7 +223,8 @@
 					"width": 82,
 					"height": 17,
 					"textAlign": "right",
-					"text": "ID : "
+					"text": "ID : ",
+					"stroke": "automatic"
 				},
 				"Text10": {
 					"type": "text",
@@ -232,7 +233,8 @@
 					"width": 82,
 					"height": 17,
 					"textAlign": "right",
-					"text": "name : "
+					"text": "name : ",
+					"stroke": "automatic"
 				},
 				"Text11": {
 					"type": "text",
@@ -241,7 +243,8 @@
 					"width": 82,
 					"height": 17,
 					"textAlign": "right",
-					"text": "zipCode : "
+					"text": "zipCode : ",
+					"stroke": "automatic"
 				},
 				"Text12": {
 					"type": "text",
@@ -250,7 +253,8 @@
 					"width": 82,
 					"height": 17,
 					"textAlign": "right",
-					"text": "inhabitants : "
+					"text": "inhabitants : ",
+					"stroke": "automatic"
 				},
 				"ID": {
 					"type": "input",
@@ -278,7 +282,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"name": {
 					"type": "input",
@@ -288,7 +293,7 @@
 					"height": 17,
 					"dataSource": "[State:7]name:2",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -303,7 +308,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"zipCode": {
 					"type": "input",
@@ -313,7 +319,7 @@
 					"height": 17,
 					"dataSource": "[State:7]zipCode:3",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -328,7 +334,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"inhabitants": {
 					"type": "input",
@@ -339,7 +346,7 @@
 					"dataSource": "[State:7]population:4",
 					"dataSourceTypeHint": "integer",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -354,7 +361,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				}
 			}
 		}

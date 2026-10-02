@@ -31,7 +31,7 @@
 					"width": 80,
 					"height": 20,
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:TableSort_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -68,9 +68,6 @@
 							"width": 260,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "#008000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -79,7 +76,7 @@
 							],
 							"header": {
 								"name": "HeaderAttributes",
-								"text": "Available attributes",
+								"text": ":xliff:TableSort_HeaderAttributes",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -90,9 +87,14 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none",
+							"class": "sort-attributes"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate",
+					"stroke": "automatic"
 				},
 				"listBoxItems": {
 					"type": "listbox",
@@ -115,9 +117,6 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
@@ -132,7 +131,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Colonne3",
@@ -140,9 +140,6 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
@@ -157,24 +154,28 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"resizingMode": "legacy",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate",
+					"stroke": "automatic"
 				},
 				"AddToSort": {
 					"type": "button",
 					"top": 385,
 					"left": 330,
 					"width": 50,
-					"height": 20,
 					"text": ">",
 					"fontWeight": "bold",
-					"stroke": "#800080",
 					"focusable": false,
 					"method": "ObjectMethods/AddToSort.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default sort-criteria"
 				},
 				"listBoxCriterias": {
 					"type": "listbox",
@@ -206,14 +207,11 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#800080",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "HeaderCriterias",
-								"text": "Properties",
+								"text": ":xliff:TableSort_HeaderProperties",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -224,7 +222,9 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none",
+							"class": "sort-criteria"
 						},
 						{
 							"name": "Colonne1",
@@ -234,9 +234,6 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"pictureFormat": "truncatedCenter",
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -245,7 +242,7 @@
 							"method": "ObjectMethods/Colonne1.4dm",
 							"header": {
 								"name": "HeaderOrder",
-								"text": "Order",
+								"text": ":xliff:TableSort_HeaderOrder",
 								"stroke": "automatic",
 								"textAlign": "center",
 								"verticalAlign": "automatic"
@@ -256,24 +253,27 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate",
+					"stroke": "automatic"
 				},
 				"SortButton": {
 					"type": "button",
 					"top": 385,
 					"left": 890,
 					"width": 100,
-					"height": 20,
-					"text": "Sort",
+					"text": ":xliff:TableSort_BtnSort",
 					"fontWeight": "bold",
-					"stroke": "#800080",
 					"focusable": false,
 					"method": "ObjectMethods/SortButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default sort-criteria"
 				},
 				"Text2": {
 					"type": "text",
@@ -281,24 +281,23 @@
 					"left": 420,
 					"width": 190,
 					"height": 20,
-					"stroke": "#800080",
 					"fontWeight": "bold",
-					"text": "Sort criteria"
+					"text": ":xliff:TableSort_SortCriteria",
+					"class": "sort-criteria"
 				},
 				"RemoveFromSort": {
 					"type": "button",
 					"top": 415,
 					"left": 330,
 					"width": 50,
-					"height": 20,
 					"text": "<",
 					"fontWeight": "bold",
-					"stroke": "#800080",
 					"focusable": false,
 					"method": "ObjectMethods/RemoveFromSort.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default sort-criteria"
 				},
 				"Text4": {
 					"type": "text",
@@ -306,50 +305,50 @@
 					"left": 50,
 					"width": 220,
 					"height": 20,
-					"stroke": "#008000",
 					"fontWeight": "bold",
-					"text": "Select sort attributes"
+					"text": ":xliff:TableSort_SelectAttributes",
+					"class": "sort-attributes"
 				},
 				"CriteriaUp": {
 					"type": "button",
 					"top": 385,
 					"left": 790,
 					"width": 80,
-					"height": 20,
-					"text": "Up",
+					"text": ":xliff:TableSort_BtnUp",
 					"fontWeight": "bold",
 					"focusable": false,
 					"method": "ObjectMethods/CriteriaUp.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"CriteriaDown": {
 					"type": "button",
 					"top": 415,
 					"left": 790,
 					"width": 80,
-					"height": 20,
-					"text": "Down",
+					"text": ":xliff:TableSort_BtnDown",
 					"fontWeight": "bold",
 					"focusable": false,
 					"method": "ObjectMethods/CriteriaDown.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"ExitButton": {
 					"type": "button",
 					"top": 415,
 					"left": 890,
 					"width": 100,
-					"height": 20,
 					"action": "cancel",
-					"text": "Exit",
+					"text": ":xliff:TableSort_BtnExit",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Variable": {
 					"type": "input",
@@ -357,14 +356,14 @@
 					"left": 50,
 					"width": 202,
 					"height": 17,
-					"dataSource": "Form:C1466.dataClassName+\" table content\"",
-					"stroke": "#1E90FF",
+					"dataSource": "Form:C1466.tableTitle",
 					"fontWeight": "bold",
 					"focusable": false,
 					"fill": "transparent",
 					"enterable": false,
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"class": "hdi-link"
 				}
 			}
 		}

@@ -58,7 +58,8 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "ID : "
+					"text": "ID : ",
+					"stroke": "automatic"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -67,7 +68,8 @@
 					"width": 280,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "name : "
+					"text": "name : ",
+					"stroke": "automatic"
 				},
 				"S3_Text": {
 					"type": "text",
@@ -76,7 +78,8 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "zipCode : "
+					"text": "zipCode : ",
+					"stroke": "automatic"
 				},
 				"S4_Text": {
 					"type": "text",
@@ -85,7 +88,8 @@
 					"width": 72,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "inhabitants : "
+					"text": "inhabitants : ",
+					"stroke": "automatic"
 				},
 				"Rectangle6": {
 					"type": "rectangle",
@@ -94,7 +98,8 @@
 					"width": 616,
 					"height": 25,
 					"sizingX": "grow",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"fill": "automatic"
 				},
 				"S1_Field": {
 					"type": "input",
@@ -122,7 +127,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S2_Field": {
 					"type": "input",
@@ -132,7 +138,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[State:7]name:2",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -147,7 +153,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S3_Field": {
 					"type": "input",
@@ -157,7 +164,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[State:7]zipCode:3",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -172,7 +179,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S4_Field": {
 					"type": "input",
@@ -183,7 +191,7 @@
 					"sizingX": "grow",
 					"dataSource": "[State:7]population:4",
 					"dataSourceTypeHint": "integer",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -198,7 +206,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Line7": {
 					"type": "line",

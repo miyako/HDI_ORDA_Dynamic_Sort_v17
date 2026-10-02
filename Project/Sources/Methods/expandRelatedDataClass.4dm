@@ -1,8 +1,9 @@
 //%attributes = {"invisible":true}
 
+#DECLARE($selectedAttribute : Object)
 
-C_OBJECT:C1216($1; $selectedAttribute; $relatedDataClass; $attribute; $relatedDataClassAttribute)
-C_TEXT:C284($relatedDataClassAttributeName)
+var $relatedDataClass; $attribute; $relatedDataClassAttribute : Object
+var $relatedDataClassAttributeName : Text
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 // Attributes of objects in Form.attributeList
@@ -18,8 +19,6 @@ C_TEXT:C284($relatedDataClassAttributeName)
 // expanded: only if kind is "relatedEntity" - Used to expand the attributes of a relatedEntity
 //
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-$selectedAttribute:=$1
 
 Case of 
 	: (Not:C34($selectedAttribute.expanded))

@@ -1,0 +1,43 @@
+@media (prefers-color-scheme: light) {
+	.hdi-muted {
+		stroke: #696969;
+	}
+
+	.hdi-link {
+		stroke: #1E90FF;
+	}
+
+	.hdi-panel {
+		fill: #C0C0C0;
+	}
+
+	.sort-attributes {
+		stroke: #008000;
+	}
+
+	.sort-criteria {
+		stroke: #800080;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hdi-muted {
+		stroke: #A0A0A0;
+	}
+
+	.hdi-link {
+		stroke: #5CB8FF;
+	}
+
+	.hdi-panel {
+		fill: #3A3A3A;
+	}
+
+	.sort-attributes {
+		stroke: #6FD16F;
+	}
+
+	.sort-criteria {
+		stroke: #D08FD0;
+	}
+}

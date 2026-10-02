@@ -1,6 +1,4 @@
 //%attributes = {"invisible":true}
-C_OBJECT:C1216($1)
-C_TEXT:C284($2)
+#DECLARE($settings : Object; $kind : Text)
 
-$1.result:=$1.value.kind=$2
-
+$settings.result:=$settings.value.kind=$kind

@@ -1,5 +1,5 @@
-C_COLLECTION:C1488($orderCollection)
-C_OBJECT:C1216($orderedEntitySel)
+var $orderCollection : Collection
+var $orderedEntitySel : Object
 
 
 If (btnTrace)

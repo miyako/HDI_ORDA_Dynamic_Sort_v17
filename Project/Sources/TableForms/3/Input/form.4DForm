@@ -46,7 +46,7 @@
 					"left": 554,
 					"width": 100,
 					"height": 12,
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"fontFamily": "System Font",
 					"fontSize": 9,
 					"focusable": false,
@@ -73,7 +73,7 @@
 					"width": 515,
 					"height": 17,
 					"sizingX": "grow",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"text": "Employee"
 				},
 				"Line10": {
@@ -223,7 +223,8 @@
 					"width": 84,
 					"height": 17,
 					"textAlign": "right",
-					"text": "ID : "
+					"text": "ID : ",
+					"stroke": "automatic"
 				},
 				"Text12": {
 					"type": "text",
@@ -232,7 +233,8 @@
 					"width": 84,
 					"height": 17,
 					"textAlign": "right",
-					"text": "firstname : "
+					"text": "firstname : ",
+					"stroke": "automatic"
 				},
 				"Text13": {
 					"type": "text",
@@ -241,7 +243,8 @@
 					"width": 84,
 					"height": 17,
 					"textAlign": "right",
-					"text": "lastName : "
+					"text": "lastName : ",
+					"stroke": "automatic"
 				},
 				"Text14": {
 					"type": "text",
@@ -250,7 +253,8 @@
 					"width": 84,
 					"height": 17,
 					"textAlign": "right",
-					"text": "managerID : "
+					"text": "managerID : ",
+					"stroke": "automatic"
 				},
 				"Text15": {
 					"type": "text",
@@ -259,7 +263,8 @@
 					"width": 84,
 					"height": 17,
 					"textAlign": "right",
-					"text": "employerID : "
+					"text": "employerID : ",
+					"stroke": "automatic"
 				},
 				"Text16": {
 					"type": "text",
@@ -268,7 +273,8 @@
 					"width": 84,
 					"height": 17,
 					"textAlign": "right",
-					"text": "salary : "
+					"text": "salary : ",
+					"stroke": "automatic"
 				},
 				"ID": {
 					"type": "input",
@@ -296,7 +302,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"firstname": {
 					"type": "input",
@@ -306,7 +313,7 @@
 					"height": 17,
 					"dataSource": "[Student:3]firstName:2",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -321,7 +328,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"lastName": {
 					"type": "input",
@@ -331,7 +339,7 @@
 					"height": 17,
 					"dataSource": "[Student:3]lastName:3",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -346,7 +354,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"managerID": {
 					"type": "input",
@@ -357,7 +366,7 @@
 					"dataSource": "[Student:3]schoolID:4",
 					"dataSourceTypeHint": "integer",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -372,7 +381,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"employerID": {
 					"type": "input",
@@ -382,7 +392,7 @@
 					"height": 17,
 					"dataSource": "[Student:3]email:5",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -397,7 +407,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"salary": {
 					"type": "input",
@@ -407,7 +418,7 @@
 					"height": 17,
 					"dataSource": "[Student:3]suffix:6",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -422,7 +433,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				}
 			}
 		}

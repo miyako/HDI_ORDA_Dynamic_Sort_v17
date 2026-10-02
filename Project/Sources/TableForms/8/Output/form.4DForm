@@ -58,7 +58,8 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "ID : "
+					"text": "ID : ",
+					"stroke": "automatic"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -67,7 +68,8 @@
 					"width": 72,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Copy_of_ID : "
+					"text": "Copy_of_ID : ",
+					"stroke": "automatic"
 				},
 				"S3_Text": {
 					"type": "text",
@@ -76,7 +78,8 @@
 					"width": 280,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "name : "
+					"text": "name : ",
+					"stroke": "automatic"
 				},
 				"S4_Text": {
 					"type": "text",
@@ -85,7 +88,8 @@
 					"width": 132,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "numberOfEmployees : "
+					"text": "numberOfEmployees : ",
+					"stroke": "automatic"
 				},
 				"S5_Text": {
 					"type": "text",
@@ -94,7 +98,8 @@
 					"width": 84,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "PageNumber : "
+					"text": "PageNumber : ",
+					"stroke": "automatic"
 				},
 				"S6_Text": {
 					"type": "text",
@@ -103,7 +108,8 @@
 					"width": 280,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "TabTitle : "
+					"text": "TabTitle : ",
+					"stroke": "automatic"
 				},
 				"S7_Text": {
 					"type": "text",
@@ -112,7 +118,8 @@
 					"width": 240,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Description : "
+					"text": "Description : ",
+					"stroke": "automatic"
 				},
 				"Rectangle9": {
 					"type": "rectangle",
@@ -121,7 +128,8 @@
 					"width": 1384,
 					"height": 25,
 					"sizingX": "grow",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"fill": "automatic"
 				},
 				"S1_Field": {
 					"type": "input",
@@ -149,7 +157,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S2_Field": {
 					"type": "input",
@@ -176,7 +185,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S3_Field": {
 					"type": "input",
@@ -186,7 +196,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[Company:8]name:3",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -201,7 +211,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S4_Field": {
 					"type": "input",
@@ -211,7 +222,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[Company:8]numberOfEmployees:4",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -226,7 +237,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S5_Field": {
 					"type": "input",
@@ -236,7 +248,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[Company:8]",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -251,7 +263,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S6_Field": {
 					"type": "input",
@@ -261,7 +274,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[Company:8]",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -276,7 +289,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S7_Field": {
 					"type": "input",
@@ -286,7 +300,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[Company:8]",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -301,7 +315,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Line10": {
 					"type": "line",

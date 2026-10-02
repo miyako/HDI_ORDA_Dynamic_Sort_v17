@@ -1,15 +1,14 @@
 
-C_BOOLEAN:C305(btnTrace)
 
-C_OBJECT:C1216($dataClass; $dataClassAttribute; $relatedDataClass; $relatedDataClassAttribute; $attribute)
+var $dataClass; $dataClassAttribute; $relatedDataClass; $relatedDataClassAttribute; $attribute : Object
 
-C_LONGINT:C283($lastColumn; $defaultFieldType; $numberOfColumns)
+var $lastColumn; $defaultFieldType; $numberOfColumns : Integer
 
-C_TEXT:C284($dataClassName; $attributeName; $relatedDataClassAttributeName; $colName; $colTitle; $colFormula; $path; $attributeName)
+var $dataClassName; $attributeName; $relatedDataClassAttributeName; $colName; $colTitle; $colFormula; $path : Text
 
-C_PICTURE:C286($pict)
+var $pict : Picture
 
-C_POINTER:C301($ptr)
+var $ptr : Pointer
 
 
 If (btnTrace)
@@ -21,6 +20,7 @@ Case of
 	: (Form event code:C388=On Load:K2:1)
 		
 		$dataClassName:=Form:C1466.dataClassName
+		Form:C1466.tableTitle:=Replace string:C233(Localized string("TableSort_TableContent"); "{name}"; $dataClassName)
 		
 		//Delete current listBox
 		$numberOfColumns:=LISTBOX Get number of columns:C831(*; "listBoxItems")
@@ -44,6 +44,7 @@ Case of
 				: ($dataClassAttribute.kind="storage")
 					LISTBOX INSERT COLUMN FORMULA:C970(*; "listBoxItems"; $lastColumn; $attributeName; "This."+$attributeName; $defaultFieldType; "Header"+String:C10($lastColumn); $ptr)
 					OBJECT SET TITLE:C194(*; "Header"+String:C10($lastColumn); $attributeName)
+					LISTBOX SET PROPERTY(*; $attributeName; lk truncate mode; lk without ellipsis)
 					$lastColumn:=$lastColumn+1
 					
 					
@@ -66,6 +67,7 @@ Case of
 							
 							LISTBOX INSERT COLUMN FORMULA:C970(*; "listBoxItems"; $lastColumn; $colName; $colFormula; $defaultFieldType; "Header"+String:C10($lastColumn); $ptr)
 							OBJECT SET TITLE:C194(*; "Header"+String:C10($lastColumn); $colTitle)
+							LISTBOX SET PROPERTY(*; $colName; lk truncate mode; lk without ellipsis)
 							$lastColumn:=$lastColumn+1
 						End if 
 					End for each 

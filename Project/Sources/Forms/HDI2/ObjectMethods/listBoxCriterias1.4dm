@@ -1,7 +1,7 @@
 
-C_LONGINT:C283($win)
+var $win : Integer
 
-C_OBJECT:C1216($formData)
+var $formData : Object
 
 If (btnTrace)
 	TRACE:C157

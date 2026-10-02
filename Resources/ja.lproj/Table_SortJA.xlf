@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="Table_Sort" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="TableSort_Trace" resname="TableSort_Trace">
+				<source>Trace</source>
+				<target>トレース</target>
+			</trans-unit>
+			<trans-unit id="TableSort_SortCriteria" resname="TableSort_SortCriteria">
+				<source>Sort criteria</source>
+				<target>ソート条件</target>
+			</trans-unit>
+			<trans-unit id="TableSort_SelectAttributes" resname="TableSort_SelectAttributes">
+				<source>Select sort attributes</source>
+				<target>ソートする属性を選択</target>
+			</trans-unit>
+			<trans-unit id="TableSort_BtnSort" resname="TableSort_BtnSort">
+				<source>Sort</source>
+				<target>ソート</target>
+			</trans-unit>
+			<trans-unit id="TableSort_BtnUp" resname="TableSort_BtnUp">
+				<source>Up</source>
+				<target>上へ</target>
+			</trans-unit>
+			<trans-unit id="TableSort_BtnDown" resname="TableSort_BtnDown">
+				<source>Down</source>
+				<target>下へ</target>
+			</trans-unit>
+			<trans-unit id="TableSort_BtnExit" resname="TableSort_BtnExit">
+				<source>Exit</source>
+				<target>終了</target>
+			</trans-unit>
+			<trans-unit id="TableSort_HeaderAttributes" resname="TableSort_HeaderAttributes">
+				<source>Available attributes</source>
+				<target>選択可能な属性</target>
+			</trans-unit>
+			<trans-unit id="TableSort_HeaderProperties" resname="TableSort_HeaderProperties">
+				<source>Properties</source>
+				<target>プロパティ</target>
+			</trans-unit>
+			<trans-unit id="TableSort_HeaderOrder" resname="TableSort_HeaderOrder">
+				<source>Order</source>
+				<target>順序</target>
+			</trans-unit>
+			<trans-unit id="TableSort_TableContent" resname="TableSort_TableContent">
+				<source>{name} table content</source>
+				<target>{name}テーブルの内容</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

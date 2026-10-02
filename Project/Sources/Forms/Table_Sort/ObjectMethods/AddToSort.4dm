@@ -1,7 +1,7 @@
 
-C_OBJECT:C1216($obj)
-C_LONGINT:C283($index)
-C_BOOLEAN:C305($exit)
+var $obj : Object
+var $index : Integer
+var $exit : Boolean
 
 
 If (btnTrace)

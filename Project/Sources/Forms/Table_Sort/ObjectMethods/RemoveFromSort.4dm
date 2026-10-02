@@ -1,5 +1,5 @@
 
-C_OBJECT:C1216($obj)
+var $obj : Object
 
 
 If (btnTrace)

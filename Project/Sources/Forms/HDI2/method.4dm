@@ -1,8 +1,7 @@
-C_BOOLEAN:C305(btnTrace)
 
-C_OBJECT:C1216($dataClassObj)
+var $dataClassObj : Object
 
-C_TEXT:C284($dataClassName)
+var $dataClassName : Text
 
 Case of 
 		

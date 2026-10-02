@@ -46,7 +46,7 @@
 					"left": 554,
 					"width": 100,
 					"height": 12,
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"fontFamily": "System Font",
 					"fontSize": 9,
 					"focusable": false,
@@ -73,7 +73,7 @@
 					"width": 515,
 					"height": 17,
 					"sizingX": "grow",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"text": "Company"
 				},
 				"Line11": {
@@ -223,7 +223,8 @@
 					"width": 142,
 					"height": 17,
 					"textAlign": "right",
-					"text": "ID : "
+					"text": "ID : ",
+					"stroke": "automatic"
 				},
 				"Text13": {
 					"type": "text",
@@ -232,7 +233,8 @@
 					"width": 142,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Copy_of_ID : "
+					"text": "Copy_of_ID : ",
+					"stroke": "automatic"
 				},
 				"Text14": {
 					"type": "text",
@@ -241,7 +243,8 @@
 					"width": 142,
 					"height": 17,
 					"textAlign": "right",
-					"text": "name : "
+					"text": "name : ",
+					"stroke": "automatic"
 				},
 				"Text15": {
 					"type": "text",
@@ -250,7 +253,8 @@
 					"width": 142,
 					"height": 17,
 					"textAlign": "right",
-					"text": "numberOfEmployees : "
+					"text": "numberOfEmployees : ",
+					"stroke": "automatic"
 				},
 				"Text16": {
 					"type": "text",
@@ -259,7 +263,8 @@
 					"width": 142,
 					"height": 17,
 					"textAlign": "right",
-					"text": "PageNumber : "
+					"text": "PageNumber : ",
+					"stroke": "automatic"
 				},
 				"Text17": {
 					"type": "text",
@@ -268,7 +273,8 @@
 					"width": 142,
 					"height": 17,
 					"textAlign": "right",
-					"text": "TabTitle : "
+					"text": "TabTitle : ",
+					"stroke": "automatic"
 				},
 				"Text18": {
 					"type": "text",
@@ -277,7 +283,8 @@
 					"width": 142,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Description : "
+					"text": "Description : ",
+					"stroke": "automatic"
 				},
 				"ID": {
 					"type": "input",
@@ -305,7 +312,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Copy_of_ID": {
 					"type": "input",
@@ -332,7 +340,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"name": {
 					"type": "input",
@@ -342,7 +351,7 @@
 					"height": 17,
 					"dataSource": "[Company:8]name:3",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -357,7 +366,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"numberOfEmployees": {
 					"type": "input",
@@ -367,7 +377,7 @@
 					"height": 17,
 					"dataSource": "[Company:8]numberOfEmployees:4",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -382,7 +392,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"PageNumber": {
 					"type": "input",
@@ -392,7 +403,7 @@
 					"height": 17,
 					"dataSource": "[Company:8]",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -407,7 +418,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"TabTitle": {
 					"type": "input",
@@ -417,7 +429,7 @@
 					"height": 17,
 					"dataSource": "[Company:8]",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -432,7 +444,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Description": {
 					"type": "input",
@@ -442,7 +455,7 @@
 					"height": 65,
 					"dataSource": "[Company:8]",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"scrollbarVertical": "visible",
@@ -458,7 +471,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				}
 			}
 		}
